@@ -4,6 +4,7 @@ public class Granjero {
 	private String apellidos;
 	private int edad;
 	private char sexo;
+	private Mascota mascota;
 	
 	public Granjero(String nombre, String apellidos, int edad, char sexo) {
 		this.nombre = nombre;
@@ -46,6 +47,13 @@ public class Granjero {
 
 	@Override
 	public String toString() {
-		return "Granjero [nombre=" + nombre + ", apellidos=" + apellidos + ", edad=" + edad + ", sexo=" + sexo + "]";
+		return "Granjero [nombre=" + nombre + ", apellidos=" + apellidos + ", edad=" + edad + ", sexo=" + sexo
+				+ ", mascota=" + mascota + "]";
 	}
+
+	public void setMascota(Mascota mascota) {
+		this.mascota = mascota;
+	}
+	
+	
 }
